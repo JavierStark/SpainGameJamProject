@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private float groundDistance = 0.35f;
 
+    [SerializeField] private float climbForce;
+
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
@@ -59,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetAxis("Jump") > 0.1)
         {
-            jumpMultiplier += 0.2f * Time.deltaTime;
+            jumpMultiplier += 0.1f * Time.deltaTime*2;
             jumpMultiplier = Mathf.Clamp(jumpMultiplier, 0, 1);
             jumpSlider.value = jumpMultiplier;
         }
@@ -97,4 +99,19 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag == "ClimbCollider") {
+            playerRigidbody.AddForce(Vector3.up * climbForce);
+
+            other.gameObject.SetActive(false);
+
+            StartCoroutine(ActivateClimbColliderAfterDelay(other.gameObject));
+        }
+    }
+
+    private IEnumerator ActivateClimbColliderAfterDelay(GameObject climbCollider) {
+        yield return new WaitForSeconds(1f);
+        climbCollider.SetActive(true);
+    }
 }

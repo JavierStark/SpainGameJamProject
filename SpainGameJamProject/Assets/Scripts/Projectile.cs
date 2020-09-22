@@ -5,10 +5,11 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
 
-    [SerializeField] private float force = 20;
+    [SerializeField] private float force = 50;
 
-    void Start()
-    {
-        GetComponent<Rigidbody>().AddForce(transform.forward * force , ForceMode.Impulse);
+    
+
+    public void AddForce(float multiplier) {
+        GetComponent<Rigidbody>().AddForce(transform.forward * force * multiplier, ForceMode.Impulse);
     }
 }

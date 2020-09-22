@@ -6,16 +6,28 @@ using UnityEngine.UI;
 public class Stamina : MonoBehaviour
 {
 
-    [SerializeField] private Slider staminaBar;
+    private Slider staminaBar;
+
+    [SerializeField] private bool regenerating = false;
+    [SerializeField] private float regenerationValue;
 
     void Start()
     {
-        staminaBar.value = 1;
+        staminaBar = GetComponent<Slider>();
+        staminaBar.value = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(regenerating) {
+            staminaBar.value += regenerationValue * Time.deltaTime;
+        }        
     }
+
+    
+    public void SpendStamina(float spentStamina) {
+        staminaBar.value -= spentStamina;
+    }
+    
 }

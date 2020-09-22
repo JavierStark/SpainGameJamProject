@@ -24,7 +24,7 @@ public class ProjectileLauncher : MonoBehaviour
             var projectile = Instantiate(projectilePrefab, this.transform.position, Quaternion.identity, parent);
 
             projectile.transform.forward = Camera.main.transform.forward;
-
+                        
             projectile.GetComponent<Projectile>().AddForce(force);
 
             force = 0;

@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private LayerMask propMask;
     [SerializeField] private Slider jumpSlider;
+    [SerializeField] private Stamina stamina;
     private Rigidbody playerRigidbody;
 
     //Axis
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
+        jumpSlider.gameObject.SetActive(false);
     }
 
     private void CheckGround()
@@ -61,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetAxis("Jump") > 0.1)
         {
+            jumpSlider.gameObject.SetActive(true);
+
             jumpMultiplier += 1f * Time.deltaTime*2;
             jumpMultiplier = Mathf.Clamp(jumpMultiplier, 1, 10);
             jumpSlider.value = jumpMultiplier;
@@ -69,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonUp("Jump")) {
             if (isGrounded) {
                 Jump();
+                jumpSlider.gameObject.SetActive(false);
             }
             jumpMultiplier = 1;
             jumpSlider.value = jumpMultiplier;
@@ -96,13 +101,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump() {
         playerRigidbody.AddForce(Vector3.up*jumpForce*jumpMultiplier);
-        
+        stamina.SpendStamina(20);        
     }
 
 
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "ClimbCollider") {
+            stamina.SpendStamina(30);
+
             playerRigidbody.AddForce(Vector3.up * climbForce);
 
             other.gameObject.SetActive(false);

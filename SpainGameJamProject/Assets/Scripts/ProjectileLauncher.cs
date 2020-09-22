@@ -9,15 +9,15 @@ public class ProjectileLauncher : MonoBehaviour
     [SerializeField] private Transform parent;
     [SerializeField] private Slider shootForceSlider;
 
-    private float multiplier;
+    private float force;
 
 
     void Update()
     {
         if (Input.GetKey(KeyCode.Mouse0)) {
-            multiplier += 0.3f * Time.deltaTime;
-            multiplier = Mathf.Clamp(multiplier, 0, 1);
-            shootForceSlider.value = multiplier;
+            force += 0.3f * Time.deltaTime;
+            force = Mathf.Clamp(force, 0, 1);
+            shootForceSlider.value = force;
         }
 
         if (Input.GetKeyUp(KeyCode.Mouse0)) {
@@ -25,10 +25,10 @@ public class ProjectileLauncher : MonoBehaviour
 
             projectile.transform.forward = Camera.main.transform.forward;
 
-            projectile.GetComponent<Projectile>().AddForce(multiplier);
+            projectile.GetComponent<Projectile>().AddForce(force);
 
-            multiplier = 0;
-            shootForceSlider.value = multiplier;
+            force = 0;
+            shootForceSlider.value = force;
         }
     }
 }

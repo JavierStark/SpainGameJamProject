@@ -12,6 +12,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float minDelay;
     [SerializeField] private float maxDelay;
 
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private float force;
+
 
     void Start()
     {
@@ -38,13 +41,23 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator BehaviourLoop() {
         while(true){
-            Debug.Log("New behaviour");
             yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
 
-            //if(Random.Range(1,3) > 2) {
+            if(Random.Range(0,2) == 0) {
                 Jump(DetectNearBranches());
-            //}
+            }
+            else {
+                Shoot();
+            }
         }
+    }
+    
+    private void Shoot() {
+        var currentProjectile = Instantiate(projectile, this.transform.position, Quaternion.identity);
+
+        Vector3 direction = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized;
+
+        currentProjectile.GetComponent<Rigidbody>().AddForce(direction*force, ForceMode.Impulse);
     }
 
     private void Jump(List<Branch> branches) {

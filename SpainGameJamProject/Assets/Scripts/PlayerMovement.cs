@@ -1,26 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float playerSpeed = 10f;
-    [SerializeField] private float jumpForce = 3f;
-    private float jumpMultiplier = 0;
+    //References
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private LayerMask propMask;
+    [SerializeField] private Slider jumpSlider;
     private Rigidbody playerRigidbody;
 
+    //Axis
     private float horizontalInput;
     private float verticalInput;
     
+    //Jump
+    [SerializeField] private float jumpForce = 3f;
+    private float jumpMultiplier = 0;
 
-
+    //Movement
     private Vector3 velocity;
+    [SerializeField] private float playerSpeed = 10f;
+
+    //Grounded
     private bool isGrounded;
     private float groundDistance = 0.35f;
-    private bool isAbleToJump;
 
     void Start()
     {
@@ -53,12 +59,15 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetAxis("Jump") > 0.1)
         {
-            jumpMultiplier += Time.deltaTime*2;
+            jumpMultiplier += 0.2f * Time.deltaTime;
+            jumpMultiplier = Mathf.Clamp(jumpMultiplier, 0, 1);
+            jumpSlider.value = jumpMultiplier;
         }
 
         if (Input.GetAxis("Jump") == 0) {
             Jump();
             jumpMultiplier = 0;
+            jumpSlider.value = jumpMultiplier;
         }
     }
 
@@ -86,4 +95,6 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded)
         playerRigidbody.AddForce(Vector3.up*jumpForce*jumpMultiplier);
     }
+
+
 }

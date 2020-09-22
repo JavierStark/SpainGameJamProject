@@ -17,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private float verticalInput;
     
     //Jump
-    [SerializeField] private float jumpForce = 3f;
-    private float jumpMultiplier = 0;
+    [SerializeField] private float jumpForce = 200f;
+    private float jumpMultiplier = 1;
 
     //Movement
     private Vector3 velocity;
@@ -61,14 +61,16 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetAxis("Jump") > 0.1)
         {
-            jumpMultiplier += 0.1f * Time.deltaTime*2;
-            jumpMultiplier = Mathf.Clamp(jumpMultiplier, 0, 1);
+            jumpMultiplier += 1f * Time.deltaTime*2;
+            jumpMultiplier = Mathf.Clamp(jumpMultiplier, 1, 10);
             jumpSlider.value = jumpMultiplier;
         }
 
-        if (Input.GetAxis("Jump") == 0) {
-            Jump();
-            jumpMultiplier = 0;
+        if (Input.GetButtonUp("Jump")) {
+            if (isGrounded) {
+                Jump();
+            }
+            jumpMultiplier = 1;
             jumpSlider.value = jumpMultiplier;
         }
     }
@@ -93,9 +95,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Jump() {
-
-        if(isGrounded)
         playerRigidbody.AddForce(Vector3.up*jumpForce*jumpMultiplier);
+        
     }
 
 

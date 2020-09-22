@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8545065183173333712}
   - component: {fileID: 8545065183173333713}
   - component: {fileID: 8545065183173333726}
+  - component: {fileID: 1398357673117037921}
   m_Layer: 8
   m_Name: Brach0
   m_TagString: Untagged
@@ -26,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8545065183173333727}
-  m_LocalRotation: {x: -0, y: 0.3366771, z: -0, w: 0.94162023}
+  m_LocalRotation: {x: 0, y: 0.3366762, z: 0, w: 0.94162047}
   m_LocalPosition: {x: 5.471464, y: -3.3024006, z: -27.612913}
-  m_LocalScale: {x: 2.1487625, y: 2.1487625, z: 23.03173}
+  m_LocalScale: {x: 2.1487627, y: 2.1487625, z: 23.031733}
   m_Children:
   - {fileID: 8545065184118444325}
   m_Father: {fileID: 0}
@@ -94,6 +95,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1398357673117037921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8545065183173333727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b4a8d0a580e94f9bb377598c079a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8545065184118444322
 GameObject:
   m_ObjectHideFlags: 0

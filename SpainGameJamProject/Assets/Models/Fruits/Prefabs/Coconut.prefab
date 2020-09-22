@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 7429725380993302389}
   - component: {fileID: 5815400888184877264}
   - component: {fileID: 8597515733478458394}
-  m_Layer: 0
+  - component: {fileID: 1571475516088334658}
+  - component: {fileID: 3513787151738803815}
+  - component: {fileID: 1732473189292535514}
+  m_Layer: 10
   m_Name: Coconut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,3 +82,45 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1571475516088334658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804878282817496527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb836e6843ddbf74596697882456a271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 50
+--- !u!54 &3513787151738803815
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804878282817496527}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!135 &1732473189292535514
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804878282817496527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00088276283
+  m_Center: {x: 0, y: -2.2351741e-10, z: 0.000031319858}

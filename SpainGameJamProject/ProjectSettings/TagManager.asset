@@ -7,6 +7,7 @@ TagManager:
   - ClimbCollider
   - Brach
   - Tree
+  - FruitCollector
   layers:
   - Default
   - TransparentFX

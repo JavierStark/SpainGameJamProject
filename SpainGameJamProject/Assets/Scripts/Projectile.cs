@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
 
     [SerializeField] private float force = 50;
+    [SerializeField] public float staminaToRegenerate;
 
     private bool recharging = false;
 
@@ -25,7 +26,9 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("Trigger");
-        Destroy(gameObject);
+        if (other.tag == "FruitCollector") {
+            Debug.Log("Trigger");
+            Destroy(gameObject);
+        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ProjectileLauncher : MonoBehaviour
 {
-    private GameObject projectilePrefab = null;
+    public GameObject projectilePrefab = null;
     [SerializeField] private List<GameObject> projectiles;
     [SerializeField] private Transform parent;
     [SerializeField] private Slider shootForceSlider;
@@ -31,6 +31,10 @@ public class ProjectileLauncher : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && !readyToShoot) {
             Recharge();
         }
+
+        if (Input.GetKeyDown(KeyCode.Q) && readyToShoot) {
+            Eat();
+        }
     }
 
     private void Shoot() {
@@ -53,10 +57,22 @@ public class ProjectileLauncher : MonoBehaviour
         GetComponentInChildren<Animator>().Play("Reload");        
     }
 
-    public void FruitDrop() {
-        GameObject prefab = projectilePrefab;
-        prefab.transform.localScale = new Vector3(70,70,70);
+    private void Eat() {
+        GetComponentInChildren<Animator>().Play("Eat");
+    }
+
+    public void GetFruitToEat() {
         var projectile = Instantiate(projectilePrefab, fruitDropper.position, Quaternion.Euler(new Vector3(90, 0, 0)), fruitDropper);
+        projectile.transform.localScale = new Vector3(70, 70, 70);
+        projectile.GetComponent<Rigidbody>().useGravity = false;
+        projectile.GetComponent<Collider>().enabled = false;
+        projectile.GetComponent<Projectile>().Recharging();
+        Destroy(projectile, 0.3f);
+    }
+
+    public void FruitDrop() {                
+        var projectile = Instantiate(projectilePrefab, fruitDropper.position, Quaternion.Euler(new Vector3(90, 0, 0)), fruitDropper);
+        projectile.transform.localScale = new Vector3(70, 70, 70);
         projectile.GetComponent<Rigidbody>().useGravity = false;
         projectile.GetComponent<Projectile>().Recharging();
     }

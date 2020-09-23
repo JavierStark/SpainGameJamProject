@@ -11,4 +11,12 @@ public class ShootingAnimEvents : MonoBehaviour
     public void ReadyToShoot() {
         GetComponentInParent<ProjectileLauncher>().ReadyToShoot();
     }
+
+    public void GetFruitToEat() {
+        GetComponentInParent<ProjectileLauncher>().GetFruitToEat();
+    }
+
+    public void StaminaUp() {
+        FindObjectOfType<Stamina>().GetStamina(GetComponentInParent<ProjectileLauncher>().projectilePrefab.GetComponent<Projectile>().staminaToRegenerate);
+    }
 }

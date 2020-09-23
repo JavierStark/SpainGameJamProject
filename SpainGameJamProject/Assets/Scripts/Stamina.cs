@@ -29,5 +29,9 @@ public class Stamina : MonoBehaviour
     public void SpendStamina(float spentStamina) {
         staminaBar.value -= spentStamina;
     }
-    
+
+    public void GetStamina(float getStamina) {
+        staminaBar.value += getStamina;
+    }
+
 }

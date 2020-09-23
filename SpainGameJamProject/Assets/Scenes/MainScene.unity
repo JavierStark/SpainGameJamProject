@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0.157
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964127, b: 0.57481825, a: 1}
+  m_IndirectSpecularColor: {r: 0.13821071, g: 0.23219422, b: 0.3605069, a: 0.157}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1740,6 +1740,10 @@ PrefabInstance:
       propertyPath: stamina
       value: 
       objectReference: {fileID: 1315553069}
+    - target: {fileID: 485175743, guid: 300952d784d322d44b0e2caa4508fbc3, type: 3}
+      propertyPath: m_TagString
+      value: FruitCollector
+      objectReference: {fileID: 0}
     - target: {fileID: 1874860127, guid: 300952d784d322d44b0e2caa4508fbc3, type: 3}
       propertyPath: parent
       value: 
@@ -1751,7 +1755,37 @@ PrefabInstance:
     - target: {fileID: 6826004105236937895, guid: 300952d784d322d44b0e2caa4508fbc3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.58
+      value: -0.232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826004105236937895, guid: 300952d784d322d44b0e2caa4508fbc3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826004105236937895, guid: 300952d784d322d44b0e2caa4508fbc3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043107034017985280, guid: 300952d784d322d44b0e2caa4508fbc3,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043107034017985280, guid: 300952d784d322d44b0e2caa4508fbc3,
+        type: 3}
+      propertyPath: field of view
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043107034017985280, guid: 300952d784d322d44b0e2caa4508fbc3,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043107034017985280, guid: 300952d784d322d44b0e2caa4508fbc3,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043107035834507894, guid: 300952d784d322d44b0e2caa4508fbc3,
         type: 3}
@@ -1813,7 +1847,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4391462796624966021, guid: 300952d784d322d44b0e2caa4508fbc3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 300952d784d322d44b0e2caa4508fbc3, type: 3}
 --- !u!1 &1920667322
 GameObject:

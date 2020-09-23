@@ -19,7 +19,7 @@ public class ProjectileLauncher : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Mouse0) && readyToShoot) {
-            force += 0.3f * Time.deltaTime;
+            force += 0.3f;
             force = Mathf.Clamp(force, 0, 1);
             shootForceSlider.value = force;
         }
@@ -34,7 +34,7 @@ public class ProjectileLauncher : MonoBehaviour
     }
 
     private void Shoot() {
-        var projectile = Instantiate(projectilePrefab, this.transform.position, Quaternion.identity, parent);
+        var projectile = Instantiate(projectilePrefab, transform.GetChild(0).position, Quaternion.identity, parent);
 
         projectile.transform.forward = Camera.main.transform.forward;
 
@@ -55,10 +55,10 @@ public class ProjectileLauncher : MonoBehaviour
 
     public void FruitDrop() {
         GameObject prefab = projectilePrefab;
-        prefab.transform.localScale = new Vector3(100,100,100);
-        var projectile = Instantiate(projectilePrefab, fruitDropper.position, Quaternion.Euler(new Vector3(90, 0, 0)), transform);
+        prefab.transform.localScale = new Vector3(70,70,70);
+        var projectile = Instantiate(projectilePrefab, fruitDropper.position, Quaternion.Euler(new Vector3(90, 0, 0)), fruitDropper);
         projectile.GetComponent<Rigidbody>().useGravity = false;
-        projectile.GetComponent<Rigidbody>().AddForce((transform.GetChild(0).gameObject.transform.position - projectile.transform.position)*100);
+        projectile.GetComponent<Projectile>().Recharging();
     }
 
     public void ReadyToShoot() {

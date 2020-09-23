@@ -858,7 +858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1224078431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1748,6 +1748,11 @@ PrefabInstance:
       propertyPath: shootForceSlider
       value: 
       objectReference: {fileID: 1578492739}
+    - target: {fileID: 6826004105236937895, guid: 300952d784d322d44b0e2caa4508fbc3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.58
+      objectReference: {fileID: 0}
     - target: {fileID: 7043107035834507894, guid: 300952d784d322d44b0e2caa4508fbc3,
         type: 3}
       propertyPath: m_Name

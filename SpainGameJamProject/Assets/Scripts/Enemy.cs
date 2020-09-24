@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject projectile;
     [SerializeField] private float force;
 
+    private bool jumping = false;
     [SerializeField] float initialAngle;
 
     void Start()
@@ -54,7 +55,8 @@ public class Enemy : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
 
             if(Random.Range(0,2) == 0) {
-                yield return Jump(DetectNearBranches());                
+                yield return Jump(DetectNearBranches());
+                Debug.Log("Jump finished");
             }
             else {
                 Shoot();
@@ -87,12 +89,13 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Jump(List<Branch> branches) {
         if (branches != null) {
-            StartCoroutine(JumpToBranch(branches[Random.Range(0, branches.Count)].transform));
+            yield return JumpToBranch(branches[Random.Range(0, branches.Count)].transform);
         }
         yield return null;
     }
 
     private IEnumerator JumpToBranch(Transform branch) {
+        jumping = true;
         var rigid = GetComponent<Rigidbody>();
 
         Vector3 p = new Vector3(branch.position.x , (branch.position.y + branch.localScale.y) , branch.position.z);
@@ -124,12 +127,13 @@ public class Enemy : MonoBehaviour
             rigid.velocity = finalVelocity;
         }
 
-        yield return null;
+        yield return new WaitWhile(() => jumping == true);
     }
 
     private void OnCollisionEnter(Collision collision) {
         var rigid = GetComponent<Rigidbody>();
 
+        jumping = false;
         rigid.velocity = Vector3.zero;
     }
 

@@ -15,7 +15,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject projectile;
     [SerializeField] private float force;
 
-    [SerializeField] private Transform target;
     [SerializeField] float initialAngle;
 
     void Start()
@@ -37,8 +36,8 @@ public class Enemy : MonoBehaviour
 
                 foreach(RaycastHit hit in hits) {
                     if(hit.transform.gameObject.tag == "Tree") {
-                        return null;
                         Debug.Log("Dont jump");
+                        return null;
                     }
                 }
                 

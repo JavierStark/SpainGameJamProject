@@ -8,6 +8,7 @@ TagManager:
   - Brach
   - Tree
   - FruitCollector
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - ClimbCollider
   - Enemy
   - Gun
-  - 
+  - EnemyProjectile
   - 
   - 
   - 

@@ -24,10 +24,6 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private List<Branch> DetectNearBranches() {
         List<Branch> nearBranches = new List<Branch>();
@@ -38,16 +34,16 @@ public class Enemy : MonoBehaviour
                 Ray ray = new Ray(transform.position, col.gameObject.transform.position - transform.position);
                 RaycastHit[] hits = Physics.RaycastAll(ray, branchDetectionDistance);
 
-                bool possibleJump = true;
 
                 foreach(RaycastHit hit in hits) {
                     if(hit.transform.gameObject.tag == "Tree") {
-                        possibleJump = false;
+                        return null;
+                        Debug.Log("Dont jump");
                     }
                 }
-                if (possibleJump) { 
-                    nearBranches.Add(col.gameObject.GetComponent<Branch>());
-                }
+                
+                nearBranches.Add(col.gameObject.GetComponent<Branch>());
+                
             }
         }
 
@@ -68,15 +64,32 @@ public class Enemy : MonoBehaviour
     }
     
     private void Shoot() {
-        var currentProjectile = Instantiate(projectile, this.transform.position, Quaternion.identity);
 
-        Vector3 direction = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized;
+        Ray ray = new Ray(transform.position, (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized);
+        Debug.DrawRay(ray.origin, ray.direction);
+        RaycastHit[] hits = Physics.RaycastAll(ray,100);
 
-        currentProjectile.GetComponent<Rigidbody>().AddForce(direction*force, ForceMode.Impulse);
+        bool posissibleShoot = true;
+        
+        foreach (RaycastHit hit in hits) {
+            if (hit.collider.gameObject.tag == "Tree") {
+                Debug.Log("Dont shoot");
+                posissibleShoot = false;                
+            }
+        }
+
+        if (posissibleShoot) {
+            var currentProjectile = Instantiate(projectile, this.transform.position, Quaternion.identity);
+
+            Vector3 direction = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized;
+            currentProjectile.GetComponent<Rigidbody>().AddForce(direction*force, ForceMode.Impulse);
+        }
     }
 
     private IEnumerator Jump(List<Branch> branches) {
-        StartCoroutine(JumpToBranch(branches[Random.Range(0, branches.Count)].transform));
+        if (branches != null) {
+            StartCoroutine(JumpToBranch(branches[Random.Range(0, branches.Count)].transform));
+        }
         yield return null;
     }
 

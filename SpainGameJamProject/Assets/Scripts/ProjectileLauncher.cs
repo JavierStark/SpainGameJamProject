@@ -58,6 +58,7 @@ public class ProjectileLauncher : MonoBehaviour
     }
 
     private void Eat() {
+        readyToShoot = false;
         GetComponentInChildren<Animator>().Play("Eat");
     }
 

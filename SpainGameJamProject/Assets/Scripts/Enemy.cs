@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
                 yield return Jump(DetectNearBranches());
             }
             else {
-                Shoot();
+               Shoot();
             }
         }
     }
@@ -54,13 +54,14 @@ public class Enemy : MonoBehaviour
 
                 foreach(RaycastHit hit in hits) {
                     if(hit.transform.gameObject.CompareTag("Tree")) {
-                        Debug.Log("Dont jump");
+                        Debug.Log(hit.transform.gameObject.tag);
                         return null;
                     }
+                    Debug.Log(hit.transform.tag + " " + hit.transform.gameObject.name);
                 }
-                
+
                 nearBranches.Add(col.gameObject.GetComponent<Branch>());
-                
+
             }
         }
 
@@ -84,8 +85,9 @@ public class Enemy : MonoBehaviour
 
         if (posissibleShoot) {
             var currentProjectile = Instantiate(projectile, this.transform.position, Quaternion.identity);
+            Destroy(currentProjectile, 4f);
 
-            Vector3 direction = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized;
+            Vector3 direction = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position);
             currentProjectile.GetComponent<Rigidbody>().AddForce(direction*force, ForceMode.Impulse);
             actionDone = true;
         }
@@ -93,7 +95,8 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Jump(List<Branch> branches) {
         if (branches != null) {
-            yield return JumpToBranch(branches[Random.Range(0, branches.Count)].transform);
+            Debug.Log("Jump");
+            yield return JumpToBranch(branches[Random.Range(0, branches.Count)].center);
         }
         actionDone = true;
     }

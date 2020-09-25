@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float force;
 
     private bool jumping = false;
+    private bool actionDone = false;
     [SerializeField] float initialAngle;
 
     void Start()
@@ -25,6 +26,22 @@ public class Enemy : MonoBehaviour
 
     // Update is called once per frame
 
+
+    private IEnumerator BehaviourLoop() {
+        while(true){
+            if (actionDone) {
+                yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
+                actionDone = false;
+            }
+
+            if(Random.Range(0,2) == 0) {
+                yield return Jump(DetectNearBranches());
+            }
+            else {
+                Shoot();
+            }
+        }
+    }
     private List<Branch> DetectNearBranches() {
         List<Branch> nearBranches = new List<Branch>();
 
@@ -36,7 +53,7 @@ public class Enemy : MonoBehaviour
 
 
                 foreach(RaycastHit hit in hits) {
-                    if(hit.transform.gameObject.tag == "Tree") {
+                    if(hit.transform.gameObject.CompareTag("Tree")) {
                         Debug.Log("Dont jump");
                         return null;
                     }
@@ -49,20 +66,6 @@ public class Enemy : MonoBehaviour
 
         return nearBranches;
     }
-
-    private IEnumerator BehaviourLoop() {
-        while(true){
-            yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
-
-            if(Random.Range(0,2) == 0) {
-                yield return Jump(DetectNearBranches());
-                Debug.Log("Jump finished");
-            }
-            else {
-                Shoot();
-            }
-        }
-    }
     
     private void Shoot() {
 
@@ -73,7 +76,7 @@ public class Enemy : MonoBehaviour
         bool posissibleShoot = true;
         
         foreach (RaycastHit hit in hits) {
-            if (hit.collider.gameObject.tag == "Tree") {
+            if (hit.collider.gameObject.CompareTag("Tree")) {
                 Debug.Log("Dont shoot");
                 posissibleShoot = false;                
             }
@@ -84,6 +87,7 @@ public class Enemy : MonoBehaviour
 
             Vector3 direction = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized;
             currentProjectile.GetComponent<Rigidbody>().AddForce(direction*force, ForceMode.Impulse);
+            actionDone = true;
         }
     }
 
@@ -91,7 +95,7 @@ public class Enemy : MonoBehaviour
         if (branches != null) {
             yield return JumpToBranch(branches[Random.Range(0, branches.Count)].transform);
         }
-        yield return null;
+        actionDone = true;
     }
 
     private IEnumerator JumpToBranch(Transform branch) {

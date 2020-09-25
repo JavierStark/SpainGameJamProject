@@ -9,6 +9,7 @@ TagManager:
   - Tree
   - FruitCollector
   - Enemy
+  - DeadTrigger
   layers:
   - Default
   - TransparentFX

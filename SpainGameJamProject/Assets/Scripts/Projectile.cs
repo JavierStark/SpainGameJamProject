@@ -26,15 +26,14 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.tag == "FruitCollector") {
+        if (other.CompareTag("FruitCollector")) {
             Debug.Log("Trigger");
             Destroy(gameObject);
         }
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Player") {
-            Debug.Log("hit");
+        if(collision.gameObject.CompareTag("Enemy")|| collision.gameObject.CompareTag("Player")) {
             collision.gameObject.GetComponent<Rigidbody>().AddForceAtPosition(-collision.GetContact(0).normal*1000, collision.GetContact(0).point); 
         }
     }

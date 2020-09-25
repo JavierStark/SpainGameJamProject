@@ -10,6 +10,7 @@ public class Stamina : MonoBehaviour
 
     [SerializeField] private bool regenerating = false;
     [SerializeField] private float regenerationValue;
+    [SerializeField] private float staminaLostPerSecond;
 
     void Start()
     {
@@ -22,7 +23,10 @@ public class Stamina : MonoBehaviour
     {
         if(regenerating) {
             staminaBar.value += regenerationValue * Time.deltaTime;
-        }        
+        }
+        else {
+            staminaBar.value -= staminaLostPerSecond * Time.deltaTime;
+        }
     }
 
     

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask propMask;
     [SerializeField] private Slider jumpSlider;
     [SerializeField] private Stamina stamina;
+    [SerializeField] private Fade fade;
     private Rigidbody playerRigidbody;
 
     //Axis
@@ -107,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "ClimbCollider") {
+        if(other.gameObject.CompareTag("ClimbCollider")) {
             stamina.SpendStamina(30);
 
             playerRigidbody.AddForce(Vector3.up * climbForce);
@@ -115,6 +116,10 @@ public class PlayerMovement : MonoBehaviour
             other.gameObject.SetActive(false);
 
             StartCoroutine(ActivateClimbColliderAfterDelay(other.gameObject));
+        }
+        else if (other.gameObject.CompareTag("DeadTrigger")) {
+            Debug.Log("fade");
+            fade.fading = true;
         }
     }
 

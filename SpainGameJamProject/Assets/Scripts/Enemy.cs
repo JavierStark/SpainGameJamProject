@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     Animator animator;
     [SerializeField] SceneFlow sceneFlow;
+    [SerializeField] AudioClip[] sounds;
 
     [SerializeField] private float minDelay;
     [SerializeField] private float maxDelay;
@@ -162,7 +163,6 @@ public class Enemy : MonoBehaviour
     //}
 
     private void OnTriggerEnter(Collider collider) {
-        Debug.Log("TriggerEnter");
         if (collider.transform.CompareTag("DeadTrigger")) {
             enemyDeadEvent?.Invoke();
             Destroy(this.gameObject);

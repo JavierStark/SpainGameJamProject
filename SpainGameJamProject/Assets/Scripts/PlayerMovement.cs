@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Update");
         ReadInputs();
         CheckGround();
         Movement();
@@ -108,23 +109,9 @@ public class PlayerMovement : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.CompareTag("ClimbCollider")) {
-            stamina.SpendStamina(30);
-
-            playerRigidbody.AddForce(Vector3.up * climbForce);
-
-            other.gameObject.SetActive(false);
-
-            StartCoroutine(ActivateClimbColliderAfterDelay(other.gameObject));
-        }
-        else if (other.gameObject.CompareTag("DeadTrigger")) {
+        if (other.gameObject.CompareTag("DeadTrigger")) {
             Debug.Log("fade");
             fade.fading = true;
         }
-    }
-
-    private IEnumerator ActivateClimbColliderAfterDelay(GameObject climbCollider) {
-        yield return new WaitForSeconds(1f);
-        climbCollider.SetActive(true);
     }
 }

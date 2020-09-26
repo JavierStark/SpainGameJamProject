@@ -5,4 +5,5 @@ using UnityEngine;
 public class Branch : MonoBehaviour
 {
     [SerializeField] public Transform center;
+    public GameObject enemyOn;
 }

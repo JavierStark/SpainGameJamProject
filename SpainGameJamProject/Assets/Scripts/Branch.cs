@@ -6,4 +6,8 @@ public class Branch : MonoBehaviour
 {
     [SerializeField] public Transform center;
     public GameObject enemyOn;
+
+    private void OnCollisionExit(Collision collision) {
+        enemyOn = null;
+    }
 }

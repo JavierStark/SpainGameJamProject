@@ -38,7 +38,7 @@ public class ProjectileLauncher : MonoBehaviour
     }
 
     private void Shoot() {
-        var projectile = Instantiate(projectilePrefab, transform.GetChild(0).position, Quaternion.identity, parent);
+        var projectile = Instantiate(projectilePrefab, transform.GetChild(1).position, Quaternion.identity, parent);
 
         projectile.transform.forward = Camera.main.transform.forward;
 

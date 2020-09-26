@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.NetworkInformation;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyGenerator : MonoBehaviour
 {
-
+    public UserPreferences preferences;
     List<Branch> branches;
-
+    public Text scoreText;
+    private int score = 0;
     [SerializeField] GameObject monkey;
     int currentMonkeys = 0;
 
@@ -17,6 +18,7 @@ public class EnemyGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        monkeyLimit = GetDifficulty();
         branches = FindObjectsOfType<Branch>().ToList<Branch>();
         StartCoroutine(Spawner());
     }
@@ -41,7 +43,17 @@ public class EnemyGenerator : MonoBehaviour
         }
     }
 
-    public void EnemyDead() {
+    public void EnemyDead() {        
+        scoreText.text = "Monkeys down: " + ++score;
         currentMonkeys--;
+    }
+
+    private int GetDifficulty() {
+        switch (preferences.difficulty) {
+            case 0: return 3; 
+            case 1: return 6;
+            case 2: return 10;
+            default: return 3;
+        }
     }
 }

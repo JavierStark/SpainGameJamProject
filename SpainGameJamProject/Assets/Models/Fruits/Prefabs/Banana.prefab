@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 50
-  staminaToRegenerate: 30
+  staminaToRegenerate: 10
 --- !u!54 &1356501897205119329
 Rigidbody:
   m_ObjectHideFlags: 0

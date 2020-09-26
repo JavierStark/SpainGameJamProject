@@ -19,7 +19,7 @@ public class ProjectileLauncher : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Mouse0) && readyToShoot) {
-            force += 0.3f;
+            force += 0.3f*Time.deltaTime;
             force = Mathf.Clamp(force, 0, 1);
             shootForceSlider.value = force;
         }

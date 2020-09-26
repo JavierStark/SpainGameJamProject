@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor;
 using UnityEngine;
 
@@ -22,6 +23,11 @@ public class Enemy : MonoBehaviour
     private bool actionDone = false;
     private bool eventOn = false;
     [SerializeField] float initialAngle;
+
+
+    public delegate void EnemyEvent();
+    public event EnemyEvent enemyDeadEvent;
+
 
     void Start()
     {
@@ -155,10 +161,11 @@ public class Enemy : MonoBehaviour
     //    eventOn = true;
     //}
 
-    private void OnCollisionEnter(Collision collision) {
-
-        if (collision.transform.CompareTag("DeadTrigger")) {
-            
+    private void OnTriggerEnter(Collider collider) {
+        Debug.Log("TriggerEnter");
+        if (collider.transform.CompareTag("DeadTrigger")) {
+            enemyDeadEvent?.Invoke();
+            Destroy(this.gameObject);
         }
     }
 

@@ -5,9 +5,14 @@ using UnityEngine;
 public class Branch : MonoBehaviour
 {
     [SerializeField] public Transform center;
-    public GameObject enemyOn;
+    public Enemy enemyOn;
 
-    private void OnCollisionExit(Collision collision) {
+    void EnemyDead() { 
         enemyOn = null;
+    }
+
+    public void SetMonkey(Enemy enemy) {
+        enemyOn = enemy;
+        enemyOn.enemyDeadEvent +=  EnemyDead;
     }
 }

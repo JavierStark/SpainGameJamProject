@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         
-        if (Input.GetAxis("Jump") > 0.1)
+        if (Input.GetAxis("Jump") > 0.1 && stamina.StaminaValue() > 0)
         {
             jumpSlider.gameObject.SetActive(true);
 
@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
             jumpSlider.value = jumpMultiplier;
         }
 
-        if (Input.GetButtonUp("Jump")) {
+        if (Input.GetButtonUp("Jump") && stamina.StaminaValue() > 0) {
             if (isGrounded) {
                 Jump();
                 jumpSlider.gameObject.SetActive(false);

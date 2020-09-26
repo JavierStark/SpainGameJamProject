@@ -26,16 +26,24 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        
         StartCoroutine(BehaviourLoop());
+    }
+
+    private void Update() {
+        var player = GameObject.FindGameObjectWithTag("Player");
+        Vector3 target = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
+        transform.LookAt(target);
     }
 
 
     private IEnumerator BehaviourLoop() {
-        while(true){
+        yield return Shoot();
+        while (true){            
             if (actionDone) {
                 yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
                 actionDone = false;
-                Shoot();           
+                yield return Shoot();           
             }
             
         }
@@ -67,7 +75,7 @@ public class Enemy : MonoBehaviour
     
     private IEnumerator Shoot() {
 
-        Ray ray = new Ray(transform.position, (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized);
+        Ray ray = new Ray(transform.position, (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position));        
         Debug.DrawRay(ray.origin, ray.direction);
         RaycastHit[] hits = Physics.RaycastAll(ray,100);
 
@@ -81,7 +89,7 @@ public class Enemy : MonoBehaviour
         }
 
         if (posissibleShoot) {
-            animator.Play("Throw");
+            animator.SetTrigger("Throw");
         }
 
         yield return new WaitUntil(() => actionDone == true);
@@ -148,10 +156,9 @@ public class Enemy : MonoBehaviour
     //}
 
     private void OnCollisionEnter(Collision collision) {
-        var rigid = GetComponent<Rigidbody>();
 
         if (collision.transform.CompareTag("DeadTrigger")) {
-            sceneFlow.ReloadScene();
+            
         }
     }
 

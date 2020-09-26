@@ -37,5 +37,9 @@ public class Stamina : MonoBehaviour
     public void GetStamina(float getStamina) {
         staminaBar.value += getStamina;
     }
+    
+    public float StaminaValue() {
+        return staminaBar.value;
+    }
 
 }

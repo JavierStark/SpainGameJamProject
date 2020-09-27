@@ -237,8 +237,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.29, y: 1.21, z: 5.55}
-  m_Center: {x: 0, y: 1.98, z: -4.29}
+  m_Size: {x: 2.29, y: 1.6186819, z: 5.55}
+  m_Center: {x: 0, y: 1.7756591, z: -4.29}
 --- !u!135 &7400586489344991420
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -291,3 +291,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 8106246817332296891}
+  enemyOn: {fileID: 0}

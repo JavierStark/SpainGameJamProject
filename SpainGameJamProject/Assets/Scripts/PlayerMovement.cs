@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         playerRigidbody = GetComponent<Rigidbody>();
         jumpSlider.gameObject.SetActive(false);
     }

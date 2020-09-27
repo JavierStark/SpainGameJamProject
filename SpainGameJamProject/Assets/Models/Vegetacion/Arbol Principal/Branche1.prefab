@@ -158,8 +158,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.82, y: 0.73, z: 5.26}
-  m_Center: {x: 0.15, y: 2.23, z: 4.03}
+  m_Size: {x: 2.1181731, y: 1.6616969, z: 5.26}
+  m_Center: {x: 0.17956305, y: 1.7641516, z: 4.03}
 --- !u!135 &8549689245544156778
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 877909266999328415}
+  enemyOn: {fileID: 0}
 --- !u!1 &9221414912589726103
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,10 +28,12 @@ public class Pause : MonoBehaviour
 
         if (pause) {
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             Time.timeScale = 0;
         }
         else { 
             Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             Time.timeScale = 1;
         }
     }

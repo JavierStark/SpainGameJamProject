@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float branchDetectionDistance = 50f;
     [SerializeField] private LayerMask branchesLayer;
 
+    [SerializeField] UserPreferences preferences;
+
     Animator animator;
     [SerializeField] SceneFlow sceneFlow;
     [SerializeField] AudioClip[] sounds;
@@ -35,6 +37,8 @@ public class Enemy : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+
+        audioSource.volume = preferences.fXVolume;
         
         StartCoroutine(BehaviourLoop());
     }

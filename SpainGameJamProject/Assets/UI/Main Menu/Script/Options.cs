@@ -9,6 +9,10 @@ public class Options : MonoBehaviour
 
     public GameObject optionsUI;
 
+    private void Start() {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 
     void Update()
     {

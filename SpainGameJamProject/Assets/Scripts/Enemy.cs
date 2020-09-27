@@ -177,6 +177,10 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision) {
+
+    }
+
     private void OnDrawGizmos() {
         Gizmos.DrawWireSphere(this.transform.position, branchDetectionDistance);
     }

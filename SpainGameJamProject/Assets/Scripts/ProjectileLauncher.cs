@@ -6,15 +6,23 @@ using UnityEngine.UI;
 public class ProjectileLauncher : MonoBehaviour
 {
     public GameObject projectilePrefab = null;
+
+    [SerializeField] private UserPreferences preferences;
     [SerializeField] private List<GameObject> projectiles;
     [SerializeField] private Transform parent;
     [SerializeField] private Slider shootForceSlider;
     [SerializeField] private Transform fruitDropper;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip[] clips;
 
     private float force;
 
     bool readyToShoot = false;
 
+    private void Start() {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = preferences.fXVolume;
+    }
 
     void Update()
     {
@@ -38,8 +46,11 @@ public class ProjectileLauncher : MonoBehaviour
     }
 
     private void Shoot() {
-        var projectile = Instantiate(projectilePrefab, transform.GetChild(1).position, Quaternion.identity, parent);
 
+        audioSource.clip = clips[0];
+        audioSource.Play();
+
+        var projectile = Instantiate(projectilePrefab, transform.GetChild(1).position, Quaternion.identity, parent);
         projectile.transform.forward = Camera.main.transform.forward;
 
         projectile.GetComponent<Projectile>().AddForceToProjectile(force);
@@ -50,7 +61,10 @@ public class ProjectileLauncher : MonoBehaviour
         readyToShoot = false;
     }
 
-    private void Recharge() {       
+    private void Recharge() {
+
+        audioSource.clip = clips[1];
+        audioSource.Play(31000);
 
         projectilePrefab = projectiles[Random.Range(0, projectiles.Count)];
 

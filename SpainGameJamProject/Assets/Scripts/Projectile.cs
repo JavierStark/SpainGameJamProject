@@ -7,8 +7,17 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] private float force = 50;
     [SerializeField] public float staminaToRegenerate;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip clip1;
+    [SerializeField] private AudioClip clip2;
+
 
     private bool recharging = false;
+
+    private void Start() {
+        audioSource = GetComponent<AudioSource>();
+
+    }
 
     private void Update() {
         transform.Rotate(new Vector3(0, 100, 0)*Time.deltaTime);
@@ -32,8 +41,21 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.CompareTag("Enemy")|| collision.gameObject.CompareTag("Player")) {
-            collision.gameObject.GetComponent<Rigidbody>().AddForceAtPosition(-collision.GetContact(0).normal*1000, collision.GetContact(0).point); 
+        if (collision.gameObject.CompareTag("Player")) {
+            
+            collision.gameObject.GetComponent<Rigidbody>().AddForceAtPosition(-collision.GetContact(0).normal*1000, collision.GetContact(0).point);
+        }
+        else if (transform.parent?.name == "Projectiles") {
+            if (collision.gameObject.CompareTag("Tree") || collision.gameObject.CompareTag("Brach")) {
+                audioSource.clip = clip2;
+                audioSource.Play();
+            }
+            else if (collision.gameObject.CompareTag("Enemy")) {
+                audioSource.clip = clip1;
+                audioSource.Play();
+                collision.gameObject.GetComponent<Rigidbody>().AddForceAtPosition(-collision.GetContact(0).normal*1000, collision.GetContact(0).point);
+
+            }
         }
     }
 }

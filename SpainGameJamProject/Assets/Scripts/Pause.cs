@@ -19,19 +19,20 @@ public class Pause : MonoBehaviour
         {
             Pausar();
         }
-
-        if (pause)
-        {
-            pauseMenu.SetActive(true);
-        }
-        else
-        {
-            pauseMenu.SetActive(false);
-        }
     }
 
     public void Pausar()
     {
         pause = !pause;
+        pauseMenu.SetActive(pause);
+
+        if (pause) {
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0;
+        }
+        else { 
+            Cursor.lockState = CursorLockMode.Locked;
+            Time.timeScale = 1;
+        }
     }
 }

@@ -27,7 +27,6 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("FruitCollector")) {
-            Debug.Log("Trigger");
             Destroy(gameObject);
         }
     }

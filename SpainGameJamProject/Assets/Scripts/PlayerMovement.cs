@@ -52,9 +52,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Update");
         ReadInputs();
-        CheckGround();
+        CheckGround();        
+    }
+
+    private void FixedUpdate() {
         Movement();
     }
 
@@ -94,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalInput != 0 || verticalInput != 0) {
             Vector3 movementDirection = Vector3.ClampMagnitude(forwardMovement + rigthMovement, 1.0f);
-            playerRigidbody.MovePosition(transform.position + movementDirection * playerSpeed * Time.deltaTime);
+            playerRigidbody.MovePosition(transform.position + movementDirection * (playerSpeed * Time.deltaTime));
         }
         else {
             playerRigidbody.velocity = new Vector3(0, playerRigidbody.velocity.y, playerRigidbody.velocity.z);

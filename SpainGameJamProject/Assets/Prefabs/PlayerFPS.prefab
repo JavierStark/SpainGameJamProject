@@ -338,7 +338,7 @@ MonoBehaviour:
   stamina: {fileID: 0}
   fade: {fileID: 0}
   jumpForce: 300
-  playerSpeed: 50
+  playerSpeed: 10
   climbForce: 1500
 --- !u!54 &1045281952
 Rigidbody:

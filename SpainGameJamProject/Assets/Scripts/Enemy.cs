@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     Animator animator;
     [SerializeField] SceneFlow sceneFlow;
     [SerializeField] AudioClip[] sounds;
+    AudioSource audioSource;
 
     [SerializeField] private float minDelay;
     [SerializeField] private float maxDelay;
@@ -33,6 +34,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         
         StartCoroutine(BehaviourLoop());
     }
@@ -103,6 +105,8 @@ public class Enemy : MonoBehaviour
     }
 
     public void ShootEvent() {
+        audioSource.clip = sounds[Random.Range(0, sounds.Length)];
+        audioSource.Play();
         var currentProjectile = Instantiate(projectile, this.transform.position, Quaternion.identity);
         Destroy(currentProjectile, 4f);
 

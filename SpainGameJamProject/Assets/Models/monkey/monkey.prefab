@@ -4477,7 +4477,7 @@ GameObject:
   - component: {fileID: 8649481900679475251}
   - component: {fileID: 5475810037854719238}
   m_Layer: 12
-  m_Name: Monkey
+  m_Name: monkey
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4591,12 +4591,12 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 147
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.99670315
+  MaxDistance: 80.82233
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4607,20 +4607,20 @@ AudioSource:
       time: 0
       value: 1
       inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      outSlope: -1
+      tangentMode: 69
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
+      inSlope: -1
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 69
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -4628,11 +4628,11 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.08823395
       value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 69
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
@@ -4658,11 +4658,11 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
+      time: 0.08823395
+      value: 1.1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 69
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334

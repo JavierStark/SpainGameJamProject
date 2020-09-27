@@ -9,6 +9,7 @@ public class EnemyGenerator : MonoBehaviour
     public UserPreferences preferences;
     List<Branch> branches;
     public Text scoreText;
+    public Text highscoreText;
     private int score = 0;
     [SerializeField] GameObject monkey;
     int currentMonkeys = 0;
@@ -21,6 +22,7 @@ public class EnemyGenerator : MonoBehaviour
         monkeyLimit = GetDifficulty();
         branches = FindObjectsOfType<Branch>().ToList<Branch>();
         StartCoroutine(Spawner());
+        highscoreText.text = "Highscore: "+PlayerPrefs.GetInt("Highscore");
     }
 
     private IEnumerator Spawner() {
@@ -45,6 +47,10 @@ public class EnemyGenerator : MonoBehaviour
 
     public void EnemyDead() {        
         scoreText.text = "Monkeys down: " + ++score;
+        if (PlayerPrefs.GetInt("Highscore") < score) {
+            PlayerPrefs.SetInt("Highscore", score);
+            highscoreText.text = "Highscore: "+ score;
+        }
         currentMonkeys--;
     }
 

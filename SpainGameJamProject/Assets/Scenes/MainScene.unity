@@ -3253,6 +3253,11 @@ PrefabInstance:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3723064517763649115, guid: 1c9e55f75e04e6d4aa8293b33bf12131,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 768fc6bd480147f44b90218ebf31e350, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c9e55f75e04e6d4aa8293b33bf12131, type: 3}
 --- !u!1 &1264676163

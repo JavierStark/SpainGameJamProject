@@ -10,12 +10,17 @@ public class Projectile : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] private AudioClip clip1;
     [SerializeField] private AudioClip clip2;
+    [SerializeField] UserPreferences preferences;
 
 
     private bool recharging = false;
 
     private void Start() {
         audioSource = GetComponent<AudioSource>();
+        if (transform.parent?.name == "Projectiles") {
+
+            audioSource.volume = preferences.fXVolume;
+        }
 
     }
 

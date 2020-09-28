@@ -99,6 +99,7 @@ MonoBehaviour:
   staminaToRegenerate: 50
   clip1: {fileID: 8300000, guid: c4eb60b9279d7294ea9a192ba8fc4eeb, type: 3}
   clip2: {fileID: 8300000, guid: 2d9fc1f7dfaca9a4ba7316b069163415, type: 3}
+  preferences: {fileID: 11400000, guid: ae7d634105af86a49bbac97b4488b63e, type: 2}
 --- !u!54 &3513787151738803815
 Rigidbody:
   m_ObjectHideFlags: 0

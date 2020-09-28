@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3040776642455448621}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3002978263206390463}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandMiddleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -6805772066717387100}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftElbowEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -8841836278531517454}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -5698839262380901268}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -4209082912027449276}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8061984624049828854}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandIndexEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7275487989481398726}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5128645170632655754}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -3814091669504291184}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6566953002987741895}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandPinkyEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -4197926257662470673}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftKneeEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -6150321069380097036}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7259737499125514436}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 290804186212898914}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498385700730634878}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -4580911140096119569}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6712779779451215265}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -5402617992757861590}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHipEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7651308202914763280}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -621,7 +621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -8908362841102737119}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1080431611237731065}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightElbowEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -8510802640822507807}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,7 +711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -3965299947597183182}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandRingEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -741,7 +741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -9050289453130766586}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,7 +772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5391824056009079170}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandPinkyEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2746736641983024883}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -4364898223673055588}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +863,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -8598941323506009570}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandIndexEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -893,7 +893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8191969215899954328}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2765692306635500449}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,7 +955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5543591929668381458}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3692755906039598939}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandRingEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1016,7 +1016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3458723722906861964}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1047,7 +1047,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1047631486537397839}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightWristEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1077,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7156951637225787686}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1108,7 +1108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6358910971461764135}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1139,7 +1139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925257313963130554}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1170,7 +1170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -7267290484878934964}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightShoulderEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,7 +1200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -5233113549285668975}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,7 +1231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5395846581598338984}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1262,7 +1262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5300924361063099501}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5655918008019533739}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1323,7 +1323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3411474361096985629}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105744505254152559}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1385,7 +1385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -1326238683894967192}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftWristEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,7 +1415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 152399097686676135}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -6696208014807713749}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandMiddleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4963132175035477652}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1507,7 +1507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6758772252709985766}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_Reference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1538,7 +1538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4730555804787559939}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,7 +1568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4344668645808889521}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1599,7 +1599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2484845026837816880}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1630,7 +1630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -3487073249512710497}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1661,7 +1661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 511484057884306010}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 785453233319407546}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1722,7 +1722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5445773731773202728}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1753,7 +1753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -1595406666337144693}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightFootEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1783,7 +1783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1799214941789593218}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,7 +1814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2802010038661833520}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftShoulderEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1844,7 +1844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4268141078842053802}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043333858868605159}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1905,7 +1905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4356537232328931684}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1941,9 +1941,9 @@ GameObject:
   - component: {fileID: -103833197267966244}
   - component: {fileID: -7949080269202188916}
   - component: {fileID: 3598118440759015239}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_SMOOTH
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1957,7 +1957,7 @@ Transform:
   m_GameObject: {fileID: 2138975121331084541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4087120022149028633}
   - {fileID: 2832662982051412004}
@@ -2145,7 +2145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5983458302448862799}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftAnkleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2175,7 +2175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5612179199556841716}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2206,7 +2206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2548059748065765972}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2237,7 +2237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -6032299026711197396}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,7 +2267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8406184698926062735}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2297,7 +2297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1972167344949295105}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2327,7 +2327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1385650155662284737}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2358,7 +2358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -7320501339118167027}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightKneeEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2388,7 +2388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1843268369847514051}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2418,7 +2418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6334914017270854784}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2453,7 +2453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5555383782531586810}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2483,7 +2483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2804222345752663218}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2514,7 +2514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3161977663962761028}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2547,7 +2547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2703479971510824042}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2577,7 +2577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -815263125040350880}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandThumbEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2607,7 +2607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4833281246649419119}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2638,7 +2638,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -5848716723674286164}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandThumbEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2668,7 +2668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3762309471946580197}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2699,7 +2699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293402293719982593}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2729,7 +2729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8863680736768636120}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2760,7 +2760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8218372120230249935}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2791,7 +2791,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6787443256467981742}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2822,7 +2822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3836537434141043948}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2853,7 +2853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 699472273450132891}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2883,7 +2883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -8466228130004546432}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_ChestOriginEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2913,7 +2913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -7800095127092792984}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2944,7 +2944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7626005737357045199}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2975,7 +2975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5290480519993251246}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3005,7 +3005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8446662507420112010}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3036,7 +3036,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6988127150110861749}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3067,7 +3067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2002652949094750508}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3098,7 +3098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -6629923391090011221}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_HeadEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3128,7 +3128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4798991310822375196}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_HipsEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3158,7 +3158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2687815555190147887}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3189,7 +3189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2180058107620497330}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3220,7 +3220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7436844351651962949}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3251,7 +3251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8995575980989548510}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightAnkleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3281,7 +3281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5852082815078707604}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3312,7 +3312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 937482740369705691}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3343,7 +3343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6033380370248515679}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3374,7 +3374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3755223933479715984}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3405,7 +3405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -3041232409120180083}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftFootEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3435,7 +3435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -1556644111063926835}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3466,7 +3466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7595625694489928741}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3496,7 +3496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 667263494216768994}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3527,7 +3527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3684803980631385702}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3559,7 +3559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4087120022149028633}
   - component: {fileID: 8018467632666168516}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: body_geo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3692,7 +3692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2577943833213484858}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3723,7 +3723,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5985137925005664417}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3754,7 +3754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4881895493194675871}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3787,7 +3787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3115297981549964075}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3820,7 +3820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2832662982051412004}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_Reference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3879,7 +3879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7430079218448883079}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3909,7 +3909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2457375257102859989}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3940,7 +3940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8167249846228549927}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3971,7 +3971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2504737535013503578}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4002,7 +4002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 866918065763341882}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4033,7 +4033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8222244810582618258}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4064,7 +4064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7281389124865151014}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4099,7 +4099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -5161597282751191352}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4130,7 +4130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5883379942626109435}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4161,7 +4161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -7914877578208997519}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4191,7 +4191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7889950563334471470}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4222,7 +4222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 383146097315535268}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4252,7 +4252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8619013818961428299}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4283,7 +4283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 521154769107720324}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4314,7 +4314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3857420176097021099}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4345,7 +4345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1892373862472766823}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4376,7 +4376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4439498770698551408}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4407,7 +4407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2016794079548199626}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4438,7 +4438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460747248251249027}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4469,7 +4469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9067759451382925140}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4500,7 +4500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -4776737613053649056}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4531,7 +4531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6395522955951684313}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4562,7 +4562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -6206852775471964080}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4595,7 +4595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2560025091880301398}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_LeftPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4626,7 +4626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2026657529804301950}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4657,7 +4657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5776988884289640104}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4688,7 +4688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8898911935947145619}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_ChestEndEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4718,7 +4718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -4031964748567219581}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHipEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4748,7 +4748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 398060948990082782}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: QuickRigCharacter_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4779,7 +4779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6904695609698002034}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Monkey_Ctrl_LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}

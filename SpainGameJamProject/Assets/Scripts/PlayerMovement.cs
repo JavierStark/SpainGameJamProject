@@ -55,10 +55,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         ReadInputs();
-        CheckGround();        
     }
 
     private void FixedUpdate() {
+        CheckGround();        
         Movement();
     }
 

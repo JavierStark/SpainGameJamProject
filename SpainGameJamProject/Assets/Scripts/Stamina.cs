@@ -21,11 +21,12 @@ public class Stamina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(regenerating) {
-            staminaBar.value += regenerationValue * Time.deltaTime;
+        staminaBar.value -= staminaLostPerSecond*Time.deltaTime;
+        if (staminaBar.value == 0) {
+            GetComponent<Animator>().Play("StaminaEmpty");
         }
         else {
-            staminaBar.value -= staminaLostPerSecond * Time.deltaTime;
+            GetComponent<Animator>().Play("Default");
         }
     }
 

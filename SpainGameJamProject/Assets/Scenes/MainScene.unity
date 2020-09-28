@@ -4865,6 +4865,10 @@ PrefabInstance:
       propertyPath: clips.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 2d9fc1f7dfaca9a4ba7316b069163415, type: 3}
+    - target: {fileID: 2047351486, guid: 300952d784d322d44b0e2caa4508fbc3, type: 3}
+      propertyPath: mouseSensitivity
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 7043107035834507894, guid: 300952d784d322d44b0e2caa4508fbc3,
         type: 3}
       propertyPath: m_Name

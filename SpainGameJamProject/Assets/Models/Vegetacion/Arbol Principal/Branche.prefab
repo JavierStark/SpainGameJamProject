@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7771780318139023754}
   - component: {fileID: 1277437499822510905}
   - component: {fileID: -1483730410792972199}
+  - component: {fileID: 2216617955276370688}
   m_Layer: 8
   m_Name: Branche
   m_TagString: Brach
@@ -75,8 +76,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.57
-  m_Center: {x: -9.88, y: 4.17, z: 0}
+  m_Radius: 1.4
+  m_Center: {x: -10.08, y: 5.11, z: 0}
 --- !u!114 &-1483730410792972199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +92,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   center: {fileID: 4948182019532526331}
   enemyOn: {fileID: 0}
+--- !u!135 &2216617955276370688
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73387794706228204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.4
+  m_Center: {x: -8.38, y: 3.24, z: 0}
 --- !u!1 &207059103661289069
 GameObject:
   m_ObjectHideFlags: 0
